@@ -28,8 +28,7 @@ import play.api.libs.json.Json
  * @param description an optional description
  */
 case class Beer(
-                 //_id : String = BSONObjectID.generate.toString(),
-                 _id : String = java.util.UUID.randomUUID.toString,
+                 _id : String = BSONObjectID.generate.toString(),
                  title : String,
                  description : Option[String] = None
                  )
